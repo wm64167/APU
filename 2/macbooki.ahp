@@ -1,0 +1,42 @@
+ahp:
+  title: "MacBook Selection"
+  criterias:
+    - name: "Screen Size"
+      subcriterias: []
+    - name: "RAM"
+      subcriterias: []
+    - name: "Storage"
+      subcriterias: []
+    - name: "Price"
+      subcriterias: []
+  alternatives:
+    - name: "Option 1"
+      criteria:
+        "Screen Size": 13.3
+        "RAM": 8
+        "Storage": 256
+        "Price": 4299
+    - name: "Option 2"
+      criteria:
+        "Screen Size": 13.3
+        "RAM": 8
+        "Storage": 256
+        "Price": 5799
+    - name: "Option 3"
+      criteria:
+        "Screen Size": 14.2
+        "RAM": 16
+        "Storage": 512
+        "Price": 8799
+    - name: "Option 4"
+      criteria:
+        "Screen Size": 16.2
+        "RAM": 16
+        "Storage": 512
+        "Price": 10799
+    - name: "Option 5"
+      criteria:
+        "Screen Size": 13.6
+        "RAM": 8
+        "Storage": 256
+        "Price": 4799
