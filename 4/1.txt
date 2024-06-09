@@ -1,0 +1,72 @@
+Call:
+C5.0.formula(formula = case ~ ., data = train_data, rules = TRUE)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Sun Jun  9 18:37:08 2024
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 173 cases (8 attributes) from undefined.data
+
+Rules:
+
+Rule 1: (102/20, lift 1.2)
+	spontaneous <= 0
+	->  class 0  [0.798]
+
+Rule 2: (147/43, lift 1.0)
+	induced <= 1
+	->  class 0  [0.705]
+
+Rule 3: (7, lift 2.8)
+	spontaneous > 1
+	pooled.stratum > 49
+	->  class 1  [0.889]
+
+Rule 4: (15/1, lift 2.8)
+	age > 32
+	parity <= 3
+	spontaneous > 0
+	->  class 1  [0.882]
+
+Rule 5: (4, lift 2.7)
+	age <= 32
+	spontaneous > 0
+	pooled.stratum <= 13
+	->  class 1  [0.833]
+
+Rule 6: (2, lift 2.4)
+	age > 32
+	induced > 1
+	spontaneous > 0
+	->  class 1  [0.750]
+
+Default class: 0
+
+
+Evaluation on training data (173 cases):
+
+	        Rules     
+	  ----------------
+	    No      Errors
+
+	     6   31(17.9%)   <<
+
+
+	   (a)   (b)    <-classified as
+	  ----  ----
+	   118     1    (a): class 0
+	    30    24    (b): class 1
+
+
+	Attribute usage:
+
+	 86.13%	induced
+	 73.41%	spontaneous
+	 12.14%	age
+	  8.67%	parity
+	  6.36%	pooled.stratum
+
+
+Time: 0.0 secs
